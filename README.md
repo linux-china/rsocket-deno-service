@@ -3,6 +3,13 @@ Spring Boot RSocket Service for Deno
 
 # Example usage
 
+* RSocket settings for application.properties :
+
+```properties
+spring.rsocket.server.mapping-path=/rsocket
+spring.rsocket.server.transport=websocket
+```
+
 * RSocket service controller:
 
 ```java
