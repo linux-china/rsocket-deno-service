@@ -5,8 +5,8 @@ Spring Boot RSocket Service for Deno
 
 * RSocket service controller:
 
-```
- @Controller
+```java
+@Controller
 @MessageMapping("UserService")
 public class UserServiceController {
 
@@ -19,7 +19,7 @@ public class UserServiceController {
 
 * Deno client
 
-```
+```typescript
 import {buildServiceStub, RSocketConnector} from "https://deno.land/x/rsocket/mod.ts"
 import {Publisher, publisherToAsyncIterator} from "https://deno.land/x/rsocket/reactivestreams/mod.ts";
 
